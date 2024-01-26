@@ -100,6 +100,11 @@ app.get('/login', (req, res) => {
   });
 
 
+  app.get('/register', (req, res) => {
+    res.render('register');
+  });
+
+
 const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
